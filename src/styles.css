@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: #000000;
+  color:#ffffff;
+}
+nav
+{
+background-color: #000000;
+}
+
+
+.nav-link
+{color: #ffffff;
+font-weight: bold;
+}
+#delete{
+  background-color: red;
+  color:white;
+}
+#view
+{
+  background-color:grey;
+  color:#ffffff
+}

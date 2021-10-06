@@ -1,0 +1,42 @@
+<h2>Employee List</h2>
+
+<table class="table table-striped">
+
+<thead>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Email</th>
+    <th>Actions</th>
+    <th></th>
+    <th></th>
+
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor = "let employee of employees"><!--on a rajouté dans employee-list.componeny.ts employees!: Employee[];-->
+    <td>{{employee.firstname}}</td>
+    <td>{{employee.lastname}}</td>
+    <td>{{employee.email}}</td>
+    <td>
+      <button type ="submit" class =" btn btn-dark btn-md mt-3" (click)="updateEmployee(employee.id)">Update</button>
+
+    </td>
+    <td>
+      <button type ="submit" class =" btn  btn-md mt-3" id="delete" (click)="deleteEmployee(employee.id)">Delete</button>
+
+    </td>
+    <td>
+      <button type ="submit" class =" btn  btn-md mt-3" id="view" (click)="EmployeeDetails(employee.id)">View</button>
+
+    </td>
+  </tr>
+</tbody>
+
+
+
+
+
+
+
+</table>
